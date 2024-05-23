@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #131733; /* Stylish dark blue background color */
+}
+
+.price-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem 2rem 5rem;
+    background-color: white;
+    margin: 0 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s all linear;
+    margin-bottom: 2rem;
+    border-radius: 2.5%;
+}
+
+.pricing-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 1rem 1rem 0rem rgba(27, 31, 59, 0.5); /* Updated shadow color to match the new background */
+}
+
+.pricing-item li {
+    list-style: none;
+}
+
+.pricing {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgb(238, 188, 62); /* Updated price color to golden */
+    font-weight: bold;
+}
+
+.pricing-kit {
+    font-size: 1.3rem;
+    background-color: rgb(238, 188, 62); /* Updated kit background to golden */
+    padding: .7rem 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.pricing-item:hover .pricing-kit {
+    box-shadow: 0 0 0 50rem  rgb(238, 188, 62); /* Golden shadow effect */
+}
+
+.pricing-item:hover .order-btn {
+    background-color: rgb(238, 188, 62); /* Golden button background on hover */
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.pricing-item:hover .pricing {
+    color: black;
+    transition: .4s linear;
+}
+
+.offers li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.order-btn {
+    border: 2px solid rgb(238, 188, 62); /* Golden border for button */
+    background-color: transparent;
+    color: rgb(238, 188, 62); /* Golden text color */
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: .7rem 1rem;
+    border-radius: 0; /* Square buttons */
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background-color: rgb(238, 188, 62); /* Golden button background on hover */
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
